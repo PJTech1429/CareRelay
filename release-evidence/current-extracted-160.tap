@@ -1,0 +1,970 @@
+TAP version 13
+# Subtest: consent is actor-bound, payload-bound and single-use
+ok 1 - consent is actor-bound, payload-bound and single-use
+  ---
+  duration_ms: 3.27861
+  type: 'test'
+  ...
+# Subtest: audit chain verifies provenance
+ok 2 - audit chain verifies provenance
+  ---
+  duration_ms: 0.739764
+  type: 'test'
+  ...
+# Subtest: expired consent is rejected
+ok 3 - expired consent is rejected
+  ---
+  duration_ms: 0.525532
+  type: 'test'
+  ...
+# Subtest: page declares language, viewport and working skip link
+ok 4 - page declares language, viewport and working skip link
+  ---
+  duration_ms: 1.306303
+  type: 'test'
+  ...
+# Subtest: conversation and notices announced; controls native with no inline handlers
+ok 5 - conversation and notices announced; controls native with no inline handlers
+  ---
+  duration_ms: 0.394065
+  type: 'test'
+  ...
+# Subtest: reduced motion and visible keyboard focus preserved
+ok 6 - reduced motion and visible keyboard focus preserved
+  ---
+  duration_ms: 0.386982
+  type: 'test'
+  ...
+# Subtest: four real routes are accessible without a developer mode switch
+ok 7 - four real routes are accessible without a developer mode switch
+  ---
+  duration_ms: 0.532524
+  type: 'test'
+  ...
+# Subtest: primary experience is a labelled arbitrary free-text conversation
+ok 8 - primary experience is a labelled arbitrary free-text conversation
+  ---
+  duration_ms: 0.249003
+  type: 'test'
+  ...
+# Subtest: caregiver identity and responsibility statuses rendered from application state
+ok 9 - caregiver identity and responsibility statuses rendered from application state
+  ---
+  duration_ms: 0.157194
+  type: 'test'
+  ...
+# Subtest: product leads with handoff outcome, not a developer dashboard
+ok 10 - product leads with handoff outcome, not a developer dashboard
+  ---
+  duration_ms: 0.165415
+  type: 'test'
+  ...
+# Subtest: live, offline entry and saved replay are honestly distinguished
+ok 11 - live, offline entry and saved replay are honestly distinguished
+  ---
+  duration_ms: 0.118649
+  type: 'test'
+  ...
+# Subtest: rejects emergency situations instead of coordinating them
+ok 12 - rejects emergency situations instead of coordinating them
+  ---
+  duration_ms: 5.64672
+  type: 'test'
+  ...
+# Subtest: rejects prompt-injected treatment requests
+ok 13 - rejects prompt-injected treatment requests
+  ---
+  duration_ms: 3.851495
+  type: 'test'
+  ...
+# Subtest: rejects oversized updates
+ok 14 - rejects oversized updates
+  ---
+  duration_ms: 2.038602
+  type: 'test'
+  ...
+# Subtest: requires a named later caregiver
+ok 15 - requires a named later caregiver
+  ---
+  duration_ms: 1.650015
+  type: 'test'
+  ...
+# Subtest: consent cannot approve a substituted owner
+ok 16 - consent cannot approve a substituted owner
+  ---
+  duration_ms: 16.173361
+  type: 'test'
+  ...
+# Subtest: unfamiliar action → consent → fresh controller and session handoff
+ok 17 - unfamiliar action → consent → fresh controller and session handoff
+  ---
+  duration_ms: 49.556876
+  type: 'test'
+  ...
+# Subtest: future offer remains unassigned until owner clarification and explicit confirmation
+ok 18 - future offer remains unassigned until owner clarification and explicit confirmation
+  ---
+  duration_ms: 30.155019
+  type: 'test'
+  ...
+# Subtest: multiple actions are independently clarified and confirmed
+ok 19 - multiple actions are independently clarified and confirmed
+  ---
+  duration_ms: 30.098041
+  type: 'test'
+  ...
+# Subtest: ambiguous correction never selects arbitrarily; explicit target keeps history
+ok 20 - ambiguous correction never selects arbitrarily; explicit target keeps history
+  ---
+  duration_ms: 38.378493
+  type: 'test'
+  ...
+# Subtest: completion is a report, negation stays pending, shifts and speaker bindings persist
+ok 21 - completion is a report, negation stays pending, shifts and speaker bindings persist
+  ---
+  duration_ms: 25.897742
+  type: 'test'
+  ...
+# Subtest: stale, cross-session, reused and tampered consent are blocked
+ok 22 - stale, cross-session, reused and tampered consent are blocked
+  ---
+  duration_ms: 20.631993
+  type: 'test'
+  ...
+# Subtest: conflicting correction snapshots cannot overwrite a newer task version
+ok 23 - conflicting correction snapshots cannot overwrite a newer task version
+  ---
+  duration_ms: 24.32658
+  type: 'test'
+  ...
+# Subtest: parallel updates are serialized without lost events
+ok 24 - parallel updates are serialized without lost events
+  ---
+  duration_ms: 42.131365
+  type: 'test'
+  ...
+# Subtest: provider exceptions leave persisted state unchanged and never fallback
+ok 25 - provider exceptions leave persisted state unchanged and never fallback
+  ---
+  duration_ms: 5.792458
+  type: 'test'
+  ...
+# Subtest: malformed response still reports fabricated evidence and false completion diagnostics
+ok 26 - malformed response still reports fabricated evidence and false completion diagnostics
+  ---
+  duration_ms: 0.99312
+  type: 'test'
+  ...
+# Subtest: medical and instruction boundaries leave records unchanged
+ok 27 - medical and instruction boundaries leave records unchanged
+  ---
+  duration_ms: 6.739749
+  type: 'test'
+  ...
+# Subtest: unknown wording becomes evidence-backed review, not an invented task
+ok 28 - unknown wording becomes evidence-backed review, not an invented task
+  ---
+  duration_ms: 8.384542
+  type: 'test'
+  ...
+# Subtest: live factory is disabled without credential lookup
+ok 29 - live factory is disabled without credential lookup
+  ---
+  duration_ms: 0.3986
+  type: 'test'
+  ...
+# Subtest: Converse adapter captures exact request and usage with no retries, fake transport only
+ok 30 - Converse adapter captures exact request and usage with no retries, fake transport only
+  ---
+  duration_ms: 15.944864
+  type: 'test'
+  ...
+# Subtest: transport error permanently stops adapter; no automatic retry
+ok 31 - transport error permanently stops adapter; no automatic retry
+  ---
+  duration_ms: 0.994952
+  type: 'test'
+  ...
+# Subtest: authorized factory injects transport without making an invocation (offline only)
+ok 32 - authorized factory injects transport without making an invocation (offline only)
+  ---
+  duration_ms: 2.501718
+  type: 'test'
+  ...
+# Subtest: all diagnostics remain UNKNOWN where malformed fields prevent measurement
+ok 33 - all diagnostics remain UNKNOWN where malformed fields prevent measurement
+  ---
+  duration_ms: 1.212077
+  type: 'test'
+  ...
+# Subtest: missing expected shift and unsupported person are diagnosed despite schema failure
+ok 34 - missing expected shift and unsupported person are diagnosed despite schema failure
+  ---
+  duration_ms: 0.304705
+  type: 'test'
+  ...
+# Subtest: malicious replay provider cannot save fabricated provenance or offer-to-commitment
+ok 35 - malicious replay provider cannot save fabricated provenance or offer-to-commitment
+  ---
+  duration_ms: 9.704492
+  type: 'test'
+  ...
+# Subtest: confirmation of one proposal cannot be replayed for another
+ok 36 - confirmation of one proposal cannot be replayed for another
+  ---
+  duration_ms: 16.150492
+  type: 'test'
+  ...
+# Subtest: stored source and responsibility tampering is detected before a handoff
+ok 37 - stored source and responsibility tampering is detected before a handoff
+  ---
+  duration_ms: 27.365001
+  type: 'test'
+  ...
+# Subtest: unconfirmed work remains visible in a later caregiver handoff
+ok 38 - unconfirmed work remains visible in a later caregiver handoff
+  ---
+  duration_ms: 9.669151
+  type: 'test'
+  ...
+# Subtest: live factory run marker prevents restarting a used budget, fake transport only
+ok 39 - live factory run marker prevents restarting a used budget, fake transport only
+  ---
+  duration_ms: 1.642517
+  type: 'test'
+  ...
+# Subtest: invalid offsets and null rows produce diagnostics instead of crashing
+ok 40 - invalid offsets and null rows produce diagnostics instead of crashing
+  ---
+  duration_ms: 0.294419
+  type: 'test'
+  ...
+# Subtest: realistic caregiver flow persists and produces a later handoff
+ok 41 - realistic caregiver flow persists and produces a later handoff
+  ---
+  duration_ms: 30.274179
+  type: 'test'
+  ...
+# Subtest: assignment cannot happen without explicit confirmation
+ok 42 - assignment cannot happen without explicit confirmation
+  ---
+  duration_ms: 9.65121
+  type: 'test'
+  ...
+# Subtest: medical advice is rejected
+ok 43 - medical advice is rejected
+  ---
+  duration_ms: 1.170249
+  type: 'test'
+  ...
+# Subtest: approved judge scenario detects the cross-shift ownership gap
+ok 44 - approved judge scenario detects the cross-shift ownership gap
+  ---
+  duration_ms: 4.005055
+  type: 'test'
+  ...
+# Subtest: approved judge safety question is refused
+ok 45 - approved judge safety question is refused
+  ---
+  duration_ms: 0.791495
+  type: 'test'
+  ...
+# Subtest: MCP 2025-11-25 lifecycle works over Streamable HTTP
+ok 46 - MCP 2025-11-25 lifecycle works over Streamable HTTP
+  ---
+  duration_ms: 62.980407
+  type: 'test'
+  ...
+# Subtest: Streamable HTTP rejects hostile origins
+ok 47 - Streamable HTTP rejects hostile origins
+  ---
+  duration_ms: 10.810316
+  type: 'test'
+  ...
+# Subtest: a new caregiver MCP session receives state confirmed in the prior session
+ok 48 - a new caregiver MCP session receives state confirmed in the prior session
+  ---
+  duration_ms: 59.349759
+  type: 'test'
+  ...
+# Subtest: default app and settings/navigation never infer; sending without a NEW conversation allowance is blocked
+ok 49 - default app and settings/navigation never infer; sending without a NEW conversation allowance is blocked
+  ---
+  duration_ms: 37.785642
+  type: 'test'
+  ...
+# Subtest: per-request approval permits one send; duplicate nonce cannot infer twice
+ok 50 - per-request approval permits one send; duplicate nonce cannot infer twice
+  ---
+  duration_ms: 84.912539
+  type: 'test'
+  ...
+# Subtest: clarification → inline consent → canonical persisted handoff → resume Priya chat; no private-draft leakage
+ok 51 - clarification → inline consent → canonical persisted handoff → resume Priya chat; no private-draft leakage
+  ---
+  duration_ms: 158.565776
+  type: 'test'
+  ...
+# Subtest: workspace capability cannot resume another browser conversation, including by caregiver name
+ok 52 - workspace capability cannot resume another browser conversation, including by caregiver name
+  ---
+  duration_ms: 18.060966
+  type: 'test'
+  ...
+# Subtest: UI-authorized correction remains a proposal until consent; history and new session see all fields
+ok 53 - UI-authorized correction remains a proposal until consent; history and new session see all fields
+  ---
+  duration_ms: 207.141666
+  type: 'test'
+  ...
+# Subtest: timeout or invalid output consumes one attempt, no mutation, no automatic retry
+ok 54 - timeout or invalid output consumes one attempt, no mutation, no automatic retry
+  ---
+  duration_ms: 128.033128
+  type: 'test'
+  ...
+# Subtest: allowance alone never approves a message; fresh per-request ticket is mandatory
+ok 55 - allowance alone never approves a message; fresh per-request ticket is mandatory
+  ---
+  duration_ms: 32.060653
+  type: 'test'
+  ...
+# Subtest: turning off or exhausting the new allowance blocks further sends; refresh does not reset budget
+ok 56 - turning off or exhausting the new allowance blocks further sends; refresh does not reset budget
+  ---
+  duration_ms: 58.761504
+  type: 'test'
+  ...
+# Subtest: actual MCP wire binding resumes the same private conversation after a fresh connection
+ok 57 - actual MCP wire binding resumes the same private conversation after a fresh connection
+  ---
+  duration_ms: 125.759702
+  type: 'test'
+  ...
+# Subtest: conversation integrity detects edits to a recorded chat turn
+ok 58 - conversation integrity detects edits to a recorded chat turn
+  ---
+  duration_ms: 130.251749
+  type: 'test'
+  ...
+# Subtest: editing a proposal invalidates inline consent; rejecting it never creates a task
+ok 59 - editing a proposal invalidates inline consent; rejecting it never creates a task
+  ---
+  duration_ms: 138.126829
+  type: 'test'
+  ...
+# Subtest: question replies use persisted verified state, not generated free-form model answers
+ok 60 - question replies use persisted verified state, not generated free-form model answers
+  ---
+  duration_ms: 184.185429
+  type: 'test'
+  ...
+# Subtest: conversation context sends compact authoritative records, never task history/source duplication
+ok 61 - conversation context sends compact authoritative records, never task history/source duplication
+  ---
+  duration_ms: 0.811554
+  type: 'test'
+  ...
+# Subtest: default demo accepts a new update, clarifies, confirms and persists with zero transport calls
+ok 62 - default demo accepts a new update, clarifies, confirms and persists with zero transport calls
+  ---
+  duration_ms: 86.134675
+  type: 'test'
+  ...
+# Subtest: cancelled approval and altered contents never dispatch; replaying an approval never dispatches twice
+ok 63 - cancelled approval and altered contents never dispatch; replaying an approval never dispatches twice
+  ---
+  duration_ms: 95.848281
+  type: 'test'
+  ...
+# Subtest: old enable-once allowance is locked on journal reload, never reused as a new authorization
+ok 64 - old enable-once allowance is locked on journal reload, never reused as a new authorization
+  ---
+  duration_ms: 25.535322
+  type: 'test'
+  ...
+# Subtest: uncertain source is persisted for clarification and cannot be assigned as a task
+ok 65 - uncertain source is persisted for clarification and cannot be assigned as a task
+  ---
+  duration_ms: 28.03981
+  type: 'test'
+  ...
+# Subtest: actual launcher chooses its own URL and verifies exact delivered HTML/JS/CSS before declaring ready
+ok 66 - actual launcher chooses its own URL and verifies exact delivered HTML/JS/CSS before declaring ready
+  ---
+  duration_ms: 653.189893
+  type: 'test'
+  ...
+# Subtest: old server / wrong HTML cannot pass launcher verification even with a falsely matching build identity
+ok 67 - old server / wrong HTML cannot pass launcher verification even with a falsely matching build identity
+  ---
+  duration_ms: 52.218739
+  type: 'test'
+  ...
+# Subtest: unrelated occupied port does not prevent startup or get stopped
+ok 68 - unrelated occupied port does not prevent startup or get stopped
+  ---
+  duration_ms: 491.170724
+  type: 'test'
+  ...
+# Subtest: same verified running instance is reused rather than creating a second writer
+ok 69 - same verified running instance is reused rather than creating a second writer
+  ---
+  duration_ms: 766.243613
+  type: 'test'
+  ...
+# Subtest: incomplete or altered package fails source verification instead of opening an old page
+ok 70 - incomplete or altered package fails source verification instead of opening an old page
+  ---
+  duration_ms: 40.399195
+  type: 'test'
+  ...
+# Subtest: launcher remembers its local port so browser conversations remain resumable on normal restart
+ok 71 - launcher remembers its local port so browser conversations remain resumable on normal restart
+  ---
+  duration_ms: 928.943636
+  type: 'test'
+  ...
+# Subtest: combined correction atomically updates owner/title/time after consent; restart and new session retrieve authoritative fields
+ok 72 - combined correction atomically updates owner/title/time after consent; restart and new session retrieve authoritative fields
+  ---
+  duration_ms: 116.279555
+  type: 'test'
+  ...
+# Subtest: time-only preserves owner; owner-only preserves canonical time
+ok 73 - time-only preserves owner; owner-only preserves canonical time
+  ---
+  duration_ms: 90.645703
+  type: 'test'
+  ...
+# Subtest: legacy output changing clock only in title requires review, cannot silently keep old time
+ok 74 - legacy output changing clock only in title requires review, cannot silently keep old time
+  ---
+  duration_ms: 50.205688
+  type: 'test'
+  ...
+# Subtest: human edits invalidate old consent and bind every changed field
+ok 75 - human edits invalidate old consent and bind every changed field
+  ---
+  duration_ms: 69.011394
+  type: 'test'
+  ...
+# Subtest: unsupported timing/invented owner rejected without mutation or retry
+ok 76 - unsupported timing/invented owner rejected without mutation or retry
+  ---
+  duration_ms: 121.637374
+  type: 'test'
+  ...
+# Subtest: optional timing validates its type, cannot bypass schema
+ok 77 - optional timing validates its type, cannot bypass schema
+  ---
+  duration_ms: 41.165411
+  type: 'test'
+  ...
+# Subtest: legacy contradictory schedule flagged; consistent historical fallback is read-only
+ok 78 - legacy contradictory schedule flagged; consistent historical fallback is read-only
+  ---
+  duration_ms: 1.050823
+  type: 'test'
+  ...
+# Subtest: refusal/rejection cannot apply correction; another session cannot confirm private draft
+ok 79 - refusal/rejection cannot apply correction; another session cannot confirm private draft
+  ---
+  duration_ms: 66.920354
+  type: 'test'
+  ...
+# Subtest: actual HTTP/MCP approval stub → combined correction → consent → new session handoff, zero AWS
+ok 80 - actual HTTP/MCP approval stub → combined correction → consent → new session handoff, zero AWS
+  ---
+  duration_ms: 175.813688
+  type: 'test'
+  ...
+# Subtest: legacy review flag survives null schedule and cannot disappear merely through a read
+ok 81 - legacy review flag survives null schedule and cannot disappear merely through a read
+  ---
+  duration_ms: 0.424114
+  type: 'test'
+  ...
+# Subtest: actual dynamic HTTP path: unrelated updates, targeted AI clarification, first-person correction, question, restart handoff — no manual entry
+ok 82 - actual dynamic HTTP path: unrelated updates, targeted AI clarification, first-person correction, question, restart handoff — no manual entry
+  ---
+  duration_ms: 441.457385
+  type: 'test'
+  ...
+# Subtest: unknown proposal and unknown correction target fail preflight with zero dispatch
+ok 83 - unknown proposal and unknown correction target fail preflight with zero dispatch
+  ---
+  duration_ms: 43.367062
+  type: 'test'
+  ...
+# Subtest: primary workspace has one free-text composer and per-request AWS authorization
+ok 84 - primary workspace has one free-text composer and per-request AWS authorization
+  ---
+  duration_ms: 2.274501
+  type: 'test'
+  ...
+# Subtest: actual HTTP/MCP: locked → allowance → cancel → approved saved-output stub → review/consent → restart handoff
+ok 85 - actual HTTP/MCP: locked → allowance → cancel → approved saved-output stub → review/consent → restart handoff
+  ---
+  duration_ms: 258.233496
+  type: 'test'
+  ...
+# Subtest: genuine saved S1 → uncertain offer → human clarification → refusal → fresh confirmation → restart handoff
+ok 86 - genuine saved S1 → uncertain offer → human clarification → refusal → fresh confirmation → restart handoff
+  ---
+  duration_ms: 246.597897
+  type: 'test'
+  ...
+# Subtest: genuine S3 two unresolved actions survive review without silent assignment; private drafts never leak
+ok 87 - genuine S3 two unresolved actions survive review without silent assignment; private drafts never leak
+  ---
+  duration_ms: 64.541259
+  type: 'test'
+  ...
+# Subtest: genuine S2 preserves pending/completed work and 6–9PM shift, with two independent consent steps
+ok 88 - genuine S2 preserves pending/completed work and 6–9PM shift, with two independent consent steps
+  ---
+  duration_ms: 88.444777
+  type: 'test'
+  ...
+# Subtest: manual arbitrary unfamiliar action uses exact evidence, consent invalidates after correction, history retained
+ok 89 - manual arbitrary unfamiliar action uses exact evidence, consent invalidates after correction, history retained
+  ---
+  duration_ms: 93.882975
+  type: 'test'
+  ...
+# Subtest: rejection and invalid manual citations never create confirmed responsibility
+ok 90 - rejection and invalid manual citations never create confirmed responsibility
+  ---
+  duration_ms: 36.913086
+  type: 'test'
+  ...
+# Subtest: unseen replay message and unavailable AWS have explicit fallback with no fabricated AI result
+ok 91 - unseen replay message and unavailable AWS have explicit fallback with no fabricated AI result
+  ---
+  duration_ms: 41.362023
+  type: 'test'
+  ...
+# Subtest: non-medical guard applies to AI messages and manual input
+ok 92 - non-medical guard applies to AI messages and manual input
+  ---
+  duration_ms: 16.867777
+  type: 'test'
+  ...
+# Subtest: live adapter rejects old/exhausted experiment authorization without creating a transport
+ok 93 - live adapter rejects old/exhausted experiment authorization without creating a transport
+  ---
+  duration_ms: 2.352037
+  type: 'test'
+  ...
+# Subtest: actual live adapter wire passes genuine final raw response through full schema/evidence validation using offline injected transport
+ok 94 - actual live adapter wire passes genuine final raw response through full schema/evidence validation using offline injected transport
+  ---
+  duration_ms: 19.853215
+  type: 'test'
+  ...
+# Subtest: live transport timeout stops once and saves no proposal
+ok 95 - live transport timeout stops once and saves no proposal
+  ---
+  duration_ms: 9.773315
+  type: 'test'
+  ...
+# Subtest: malformed model output is rejected before any application proposal and requires human fallback
+ok 96 - malformed model output is rejected before any application proposal and requires human fallback
+  ---
+  duration_ms: 11.909552
+  type: 'test'
+  ...
+# Subtest: release evidence preserves numeric UUID tails while redacting actual account numbers
+ok 97 - release evidence preserves numeric UUID tails while redacting actual account numbers
+  ---
+  duration_ms: 1.205767
+  type: 'test'
+  ...
+# Subtest: single-writer lock rejects concurrent app and releases only its own token
+ok 98 - single-writer lock rejects concurrent app and releases only its own token
+  ---
+  duration_ms: 18.26315
+  type: 'test'
+  ...
+# Subtest: dead process lock is preserved and recovered without deleting household state
+ok 99 - dead process lock is preserved and recovered without deleting household state
+  ---
+  duration_ms: 9.177083
+  type: 'test'
+  ...
+# Subtest: genuine user response: original three rejection codes retained; negated morning never active; one source-grounded review with no trusted 6PM
+ok 100 - genuine user response: original three rejection codes retained; negated morning never active; one source-grounded review with no trusted 6PM
+  ---
+  duration_ms: 26.158312
+  type: 'test'
+  ...
+# Subtest: fabricated citation, person, false completion and corrupted schema still hard fail
+ok 101 - fabricated citation, person, false completion and corrupted schema still hard fail
+  ---
+  duration_ms: 7.439077
+  type: 'test'
+  ...
+# Subtest: unrelated action with wrong time is quarantined, never repaired into an asserted task
+ok 102 - unrelated action with wrong time is quarantined, never repaired into an asserted task
+  ---
+  duration_ms: 0.685601
+  type: 'test'
+  ...
+# Subtest: known genuine S1/S2/S3 validation still preserves strict accepted behavior
+ok 103 - known genuine S1/S2/S3 validation still preserves strict accepted behavior
+  ---
+  duration_ms: 25.508356
+  type: 'test'
+  ...
+# Subtest: already paid genuine response recovered locally, cannot confirm review, cannot replay twice or leak to another caregiver
+ok 104 - already paid genuine response recovered locally, cannot confirm review, cannot replay twice or leak to another caregiver
+  ---
+  duration_ms: 52.170069
+  type: 'test'
+  ...
+# Subtest: an explicitly negated report never becomes an actionable draft even if its fields otherwise validate
+ok 105 - an explicitly negated report never becomes an actionable draft even if its fields otherwise validate
+  ---
+  duration_ms: 0.49323
+  type: 'test'
+  ...
+# Subtest: saved genuine response → review → AI-shaped new clarification → fresh explicit consent → verified 6PM handoff
+ok 106 - saved genuine response → review → AI-shaped new clarification → fresh explicit consent → verified 6PM handoff
+  ---
+  duration_ms: 81.221205
+  type: 'test'
+  ...
+# Subtest: actual HTTP/MCP saved-response recovery uses zero transport calls and exposes review fields without changing original attempt
+ok 107 - actual HTTP/MCP saved-response recovery uses zero transport calls and exposes review fields without changing original attempt
+  ---
+  duration_ms: 97.208968
+  type: 'test'
+  ...
+# Subtest: default startup/snapshot/free manual/replay never dispatch AWS; direct MCP-equivalent live bypass blocked
+ok 108 - default startup/snapshot/free manual/replay never dispatch AWS; direct MCP-equivalent live bypass blocked
+  ---
+  duration_ms: 56.46889
+  type: 'test'
+  ...
+# Subtest: cancel, absent approval, content substitution, different session and duplicate approval cannot dispatch
+ok 109 - cancel, absent approval, content substitution, different session and duplicate approval cannot dispatch
+  ---
+  duration_ms: 68.287879
+  type: 'test'
+  ...
+# Subtest: approved offline stub → unresolved proposals → human review → fresh consent → persisted restart handoff
+ok 110 - approved offline stub → unresolved proposals → human review → fresh consent → persisted restart handoff
+  ---
+  duration_ms: 72.648869
+  type: 'test'
+  ...
+# Subtest: timeout consumes exactly one reservation, persists stop across restart, allows manual fallback
+ok 111 - timeout consumes exactly one reservation, persists stop across restart, allows manual fallback
+  ---
+  duration_ms: 35.879426
+  type: 'test'
+  ...
+# Subtest: invalid model response produces no proposal and locks remaining allowance without retry
+ok 112 - invalid model response produces no proposal and locks remaining allowance without retry
+  ---
+  duration_ms: 65.767409
+  type: 'test'
+  ...
+# Subtest: allowance requires all acknowledgements, valid limits, and cannot silently replace an active allowance
+ok 113 - allowance requires all acknowledgements, valid limits, and cannot silently replace an active allowance
+  ---
+  duration_ms: 32.304463
+  type: 'test'
+  ...
+# Subtest: context byte budget trims only old turns and retains current evidence, pending and verified state
+ok 114 - context byte budget trims only old turns and retains current evidence, pending and verified state
+  ---
+  duration_ms: 3.776925
+  type: 'test'
+  ...
+# Subtest: actual launcher entry starts offline, rejects unauthorized stop, gracefully stops and preserves state
+ok 115 - actual launcher entry starts offline, rejects unauthorized stop, gracefully stops and preserves state
+  ---
+  duration_ms: 234.339719
+  type: 'test'
+  ...
+# Subtest: invalid port produces a friendly error before any allowance or AWS work
+ok 116 - invalid port produces a friendly error before any allowance or AWS work
+  ---
+  duration_ms: 130.511163
+  type: 'test'
+  ...
+# Subtest: product controls exist exactly once; per-message cost popup or developer intent selector
+ok 117 - product controls exist exactly once; per-message cost popup or developer intent selector
+  ---
+  duration_ms: 9.057639
+  type: 'test'
+  ...
+# Subtest: Windows start/stop/browser validation launchers and scripts are complete
+ok 118 - Windows start/stop/browser validation launchers and scripts are complete
+  ---
+  duration_ms: 8.201655
+  type: 'test'
+  ...
+# Subtest: consent and audit survive a service restart
+ok 119 - consent and audit survive a service restart
+  ---
+  duration_ms: 29.726824
+  type: 'test'
+  ...
+# Subtest: genuine S2 stays immutable and historical validator still fails while explicit derived projection has two tasks
+ok 120 - genuine S2 stays immutable and historical validator still fails while explicit derived projection has two tasks
+  ---
+  duration_ms: 32.628393
+  type: 'test'
+  ...
+# Subtest: general shift duplicate classification for Amina
+ok 121 - general shift duplicate classification for Amina
+  ---
+  duration_ms: 5.056382
+  type: 'test'
+  ...
+# Subtest: general shift duplicate classification for Wei
+ok 122 - general shift duplicate classification for Wei
+  ---
+  duration_ms: 5.656313
+  type: 'test'
+  ...
+# Subtest: general shift duplicate classification for Óscar
+ok 123 - general shift duplicate classification for Óscar
+  ---
+  duration_ms: 3.925673
+  type: 'test'
+  ...
+# Subtest: future explicit shift is schedule only and still not complete
+ok 124 - future explicit shift is schedule only and still not complete
+  ---
+  duration_ms: 1.949
+  type: 'test'
+  ...
+# Subtest: identical shift rows are collapsed with audit dispositions, not repeated household records
+ok 125 - identical shift rows are collapsed with audit dispositions, not repeated household records
+  ---
+  duration_ms: 0.467349
+  type: 'test'
+  ...
+# Subtest: first-person progressive shift resolves only through separate caller metadata
+ok 126 - first-person progressive shift resolves only through separate caller metadata
+  ---
+  duration_ms: 1.208494
+  type: 'test'
+  ...
+# Subtest: compound shift plus real obligation cannot erase shared-evidence task
+ok 127 - compound shift plus real obligation cannot erase shared-evidence task
+  ---
+  duration_ms: 0.688463
+  type: 'test'
+  ...
+# Subtest: same actor and time but different source span is not silently treated as duplicate
+ok 128 - same actor and time but different source span is not silently treated as duplicate
+  ---
+  duration_ms: 1.195916
+  type: 'test'
+  ...
+# Subtest: ordinary progressive activity becomes unconfirmed review, not accountable work
+ok 129 - ordinary progressive activity becomes unconfirmed review, not accountable work
+  ---
+  duration_ms: 2.105574
+  type: 'test'
+  ...
+# Subtest: progressive transitive action without explicit ownership still asks for review
+ok 130 - progressive transitive action without explicit ownership still asks for review
+  ---
+  duration_ms: 1.2109
+  type: 'test'
+  ...
+# Subtest: source-grounded explicit progressive acceptance of responsibility retains an unconfirmed task
+ok 131 - source-grounded explicit progressive acceptance of responsibility retains an unconfirmed task
+  ---
+  duration_ms: 0.599173
+  type: 'test'
+  ...
+# Subtest: availability as a fact creates no task or shift
+ok 132 - availability as a fact creates no task or shift
+  ---
+  duration_ms: 0.225862
+  type: 'test'
+  ...
+# Subtest: uncertain or negated schedule cannot become a commitment: Amina is available from 08:00 to 12:00.
+ok 133 - uncertain or negated schedule cannot become a commitment: Amina is available from 08:00 to 12:00.
+  ---
+  duration_ms: 0.805484
+  type: 'test'
+  ...
+# Subtest: uncertain or negated schedule cannot become a commitment: Amina is not covering 08:00 to 12:00.
+ok 134 - uncertain or negated schedule cannot become a commitment: Amina is not covering 08:00 to 12:00.
+  ---
+  duration_ms: 0.171056
+  type: 'test'
+  ...
+# Subtest: uncertain or negated schedule cannot become a commitment: Amina may be covering 08:00 to 12:00.
+ok 135 - uncertain or negated schedule cannot become a commitment: Amina may be covering 08:00 to 12:00.
+  ---
+  duration_ms: 0.245912
+  type: 'test'
+  ...
+# Subtest: uncertain or negated schedule cannot become a commitment: Amina can cover 08:00 to 12:00.
+ok 136 - uncertain or negated schedule cannot become a commitment: Amina can cover 08:00 to 12:00.
+  ---
+  duration_ms: 0.795637
+  type: 'test'
+  ...
+# Subtest: unconfirmed offer remains an offer with no assignment
+ok 137 - unconfirmed offer remains an offer with no assignment
+  ---
+  duration_ms: 0.784109
+  type: 'test'
+  ...
+# Subtest: completed work is retained as a completion report, not converted to schedule
+ok 138 - completed work is retained as a completion report, not converted to schedule
+  ---
+  duration_ms: 0.216629
+  type: 'test'
+  ...
+# Subtest: present progressive cannot be laundered into completed work
+ok 139 - present progressive cannot be laundered into completed work
+  ---
+  duration_ms: 0.266319
+  type: 'test'
+  ...
+# Subtest: future promise cannot become completed work
+ok 140 - future promise cannot become completed work
+  ---
+  duration_ms: 0.163442
+  type: 'test'
+  ...
+# Subtest: S2 projection does not hide invalid person
+ok 141 - S2 projection does not hide invalid person
+  ---
+  duration_ms: 3.623465
+  type: 'test'
+  ...
+# Subtest: S2 projection does not hide invalid quote
+ok 142 - S2 projection does not hide invalid quote
+  ---
+  duration_ms: 2.073896
+  type: 'test'
+  ...
+# Subtest: S2 projection does not hide invalid action
+ok 143 - S2 projection does not hide invalid action
+  ---
+  duration_ms: 0.63843
+  type: 'test'
+  ...
+# Subtest: S2 projection does not hide invalid time
+ok 144 - S2 projection does not hide invalid time
+  ---
+  duration_ms: 1.74449
+  type: 'test'
+  ...
+# Subtest: S2 projection does not hide invalid completion
+ok 145 - S2 projection does not hide invalid completion
+  ---
+  duration_ms: 0.429531
+  type: 'test'
+  ...
+# Subtest: S2 projection does not hide invalid offer
+ok 146 - S2 projection does not hide invalid offer
+  ---
+  duration_ms: 2.690277
+  type: 'test'
+  ...
+# Subtest: S2 projection does not hide invalid schema
+ok 147 - S2 projection does not hide invalid schema
+  ---
+  duration_ms: 1.586877
+  type: 'test'
+  ...
+# Subtest: projection tampering cannot pass into domain records
+ok 148 - projection tampering cannot pass into domain records
+  ---
+  duration_ms: 3.863414
+  type: 'test'
+  ...
+# Subtest: genuine saved S2 completes real HTTP/MCP consent and new-session persisted handoff
+ok 149 - genuine saved S2 completes real HTTP/MCP consent and new-session persisted handoff
+  ---
+  duration_ms: 224.712281
+  type: 'test'
+  ...
+# Subtest: browser responses include defensive headers
+ok 150 - browser responses include defensive headers
+  ---
+  duration_ms: 55.61994
+  type: 'test'
+  ...
+# Subtest: MCP rejects missing protocol version after initialization
+ok 151 - MCP rejects missing protocol version after initialization
+  ---
+  duration_ms: 23.699531
+  type: 'test'
+  ...
+# Subtest: unknown sessions are rejected
+ok 152 - unknown sessions are rejected
+  ---
+  duration_ms: 4.68695
+  type: 'test'
+  ...
+# Subtest: Windows atomic replace survives transient EPERM without removing previous state
+ok 153 - Windows atomic replace survives transient EPERM without removing previous state
+  ---
+  duration_ms: 17.746385
+  type: 'test'
+  ...
+# Subtest: Windows atomic replace survives transient EACCES without removing previous state
+ok 154 - Windows atomic replace survives transient EACCES without removing previous state
+  ---
+  duration_ms: 9.550126
+  type: 'test'
+  ...
+# Subtest: Windows atomic replace survives transient EBUSY without removing previous state
+ok 155 - Windows atomic replace survives transient EBUSY without removing previous state
+  ---
+  duration_ms: 8.284985
+  type: 'test'
+  ...
+# Subtest: persistent Windows lock is bounded and preserves old state plus recovery temporary
+ok 156 - persistent Windows lock is bounded and preserves old state plus recovery temporary
+  ---
+  duration_ms: 6.419706
+  type: 'test'
+  ...
+# Subtest: no broad retry for linux/EPERM
+ok 157 - no broad retry for linux/EPERM
+  ---
+  duration_ms: 2.672031
+  type: 'test'
+  ...
+# Subtest: no broad retry for win32/ENOSPC
+ok 158 - no broad retry for win32/ENOSPC
+  ---
+  duration_ms: 2.667558
+  type: 'test'
+  ...
+# Subtest: no broad retry for win32/ENOENT
+ok 159 - no broad retry for win32/ENOENT
+  ---
+  duration_ms: 2.861959
+  type: 'test'
+  ...
+# Subtest: complete synthetic MCP flow survives injected Windows lock at every state save without any provider retry
+ok 160 - complete synthetic MCP flow survives injected Windows lock at every state save without any provider retry
+  ---
+  duration_ms: 365.613173
+  type: 'test'
+  ...
+1..160
+# tests 160
+# suites 0
+# pass 160
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11879.305529

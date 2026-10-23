@@ -1,0 +1,23 @@
+{
+  "buildId": "CARERELAY-FINAL-20261022",
+  "currentTests": {
+    "tests": 160,
+    "passed": 160,
+    "failed": 0,
+    "skipped": 0,
+    "exitCode": 0,
+    "source": "Fresh ZIP extraction; shipped test launcher runner; TAP report included"
+  },
+  "originalBaseline": {
+    "tests": 557,
+    "passed": 557,
+    "immutableZipSha256": "cd5efa41c83dc6cf86f672022db8f3e8181f0db01307eb1017ecdbedb93fa2e1"
+  },
+  "testedApplicationFiles": 68,
+  "allShippedApplicationHashesMatchTestedExtraction": true,
+  "browserAssetsMatchChromeTestedExtraction": true,
+  "awsCallsThisPhase": 0,
+  "publication": false,
+  "nativeWindowsExecutionVerified": false,
+  "freshLatestUiInferenceVerified": false
+}

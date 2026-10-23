@@ -1,0 +1,46 @@
+{
+  "dateUTC": "2026-10-22",
+  "browser": "Cloud Chrome",
+  "viewport": [
+    1363,
+    936
+  ],
+  "source": "Clean extracted release browser assets; default Offline demo and injected offline transport fixture",
+  "actualAwsCalls": 0,
+  "actualAwsCostUsd": 0,
+  "freshLiveInference": false,
+  "nativeWindowsExecution": false,
+  "observations": [
+    "Clean startup and caregiver onboarding; default Offline demo badge",
+    "Free-text demo update produced unresolved owner; no confirmed task",
+    "Clarification resolved first person to current caregiver; still an unconfirmed proposal",
+    "Human edit retained separate review evidence and fresh confirmation",
+    "Explicit confirmation closed visual relay and created confirmed task",
+    "Why this revealed original quotes plus explicit human review",
+    "Separate new caregiver session received confirmed task without previous private chat",
+    "What changed returned state-grounded owner/action/time",
+    "Caregiver resumption restored original private conversation",
+    "History and Handoff routes displayed confirmed records and source",
+    "Tentative offer remained unresolved and session-private",
+    "Dismiss removed draft without changing confirmed state",
+    "Live request cost approval appeared before offline transport dispatch",
+    "Cancel retained message and recorded no dispatch; authoritative ticket/call assertions also covered by unit tests",
+    "One approved stub request created a draft only",
+    "Exhausted allowance blocked another request",
+    "Authored timeout stopped without retry or task mutation",
+    "Authored malformed JSON/schema response stopped without proposal",
+    "Refresh preserved session and confirmed state; mode reset to Offline demo",
+    "Composer within viewport; no horizontal overflow"
+  ],
+  "screenshots": {
+    "gap.jpg": "Default bounded-grammar demo, not AI",
+    "confirmed-proof.jpg": "Confirmed responsibility and exact provenance, offline demo",
+    "handoff.jpg": "New caregiver state-grounded handoff, offline demo",
+    "cost-popup.jpg": "Cost confirmation exercised with isolated offline adapter; no AWS call"
+  },
+  "verificationLimits": [
+    "Actual process restart/persistence and stale-consent invariants verified by packaged automated tests, not a native Windows execution.",
+    "Cloud preview runtime data moved out of synchronized source tree after preview sync reset a QA draft. This was test-environment isolation; no production persistence algorithm changed.",
+    "No mobile viewport or fresh latest-UI Kimi inference tested."
+  ]
+}

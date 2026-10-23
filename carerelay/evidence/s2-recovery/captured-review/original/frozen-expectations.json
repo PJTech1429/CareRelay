@@ -1,0 +1,107 @@
+[
+  {
+    "id": "S2",
+    "message": "I will take the framed photos to the repair shop on Tuesday. Jules has already collected the repaired lamp. Jules is covering 6 PM to 9 PM.",
+    "speakerMetadata": "Ravi",
+    "expected": {
+      "facts": [],
+      "responsibilities": [
+        {
+          "meaning": "take framed photos to repair shop",
+          "ownership": "reported_commitment",
+          "temporal": "pending",
+          "candidates": [
+            "I"
+          ],
+          "timeText": "Tuesday"
+        },
+        {
+          "meaning": "collect repaired lamp",
+          "ownership": "reported_commitment",
+          "temporal": "reported_complete",
+          "candidates": [
+            "Jules"
+          ],
+          "timeText": null
+        }
+      ],
+      "shifts": [
+        {
+          "caregiverText": "Jules",
+          "startsAt": "6 PM",
+          "endsAt": "9 PM"
+        }
+      ],
+      "clarification": "confirmation still required for all consequential records",
+      "mustNot": [
+        "complete future photo delivery",
+        "omit lamp collection",
+        "omit shift"
+      ]
+    }
+  },
+  {
+    "id": "S3",
+    "message": "Either Lena or Omar may bring the folding chairs tomorrow; neither has agreed yet. The front step still needs sweeping.",
+    "speakerMetadata": "Dev",
+    "expected": {
+      "facts": [],
+      "responsibilities": [
+        {
+          "meaning": "bring folding chairs",
+          "ownership": "ambiguous",
+          "temporal": "pending",
+          "candidates": [
+            "Lena",
+            "Omar"
+          ],
+          "timeText": "tomorrow"
+        },
+        {
+          "meaning": "sweep front step",
+          "ownership": "missing",
+          "temporal": "pending",
+          "candidates": [],
+          "timeText": null
+        }
+      ],
+      "shifts": [],
+      "clarification": "ask who owns each action; do not choose a caregiver",
+      "mustNot": [
+        "assign Lena or Omar",
+        "merge the two actions",
+        "invent a shift"
+      ]
+    }
+  },
+  {
+    "id": "C1",
+    "intent": "clarification",
+    "message": "Lena will bring the folding chairs tomorrow.",
+    "speakerMetadata": "Dev",
+    "parent": "S3",
+    "expected": {
+      "decision": "resolve",
+      "ownerText": "Lena",
+      "actionText": null,
+      "taskMeaning": "bring folding chairs",
+      "target": "S3 chairs proposal",
+      "afterConfirmationOwner": "Lena"
+    }
+  },
+  {
+    "id": "C2",
+    "intent": "correction",
+    "message": "Correction: Jules will take the framed photos to the repair shop on Tuesday.",
+    "speakerMetadata": "Ravi",
+    "parent": "S2",
+    "expected": {
+      "operation": "replace_owner",
+      "ownerText": "Jules",
+      "actionText": null,
+      "taskMeaning": "take framed photos to repair shop",
+      "target": "S2 confirmed photos task",
+      "afterConfirmationOwner": "Jules"
+    }
+  }
+]

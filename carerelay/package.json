@@ -1,0 +1,15 @@
+{
+  "name": "carerelay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/launch-current.js",
+    "test": "node scripts/run-tests.js",
+    "dev": "node scripts/preview-final.js"
+  }
+}

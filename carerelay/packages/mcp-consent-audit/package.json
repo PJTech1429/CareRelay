@@ -1,0 +1,10 @@
+{
+  "name": "@carerelay/mcp-consent-audit",
+  "version": "1.0.0",
+  "description": "Dependency-free confirmation, provenance and audit primitives for consequential MCP tools.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "license": "MIT",
+  "scripts": { "test": "node --test test/*.test.js" }
+}
